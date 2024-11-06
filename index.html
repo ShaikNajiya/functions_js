@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>// 1.write a function to check whether input is even or odd
+        var num=+prompt("enter a number");
+        function evenorodd(a1){
+            if(a1%2==0){alert("even")}
+            else{alert("odd")}
+        }
+        evenorodd(num);
+        //write a function to check whether input string is palindrome or not
+        var str=prompt("enter a string")
+        function palindrome(str1){
+            var str2="";
+            for(i=str1.length-1;i>=0;i--){
+                str2+=str1[i]
+            }
+            if(str2==str1)
+            {
+                alert("palindrome")
+            }
+            else{
+                alert("not a palindrome")
+            }
+
+        }
+        palindrome(str)
+        // write a function to check the largest number among three numbers.
+        var a=+prompt("enter the first value:")
+        var b=+prompt("enter the second value:")
+        var c=+prompt("enter the third value:")
+        function largest(x,y,z){
+            if(x>y && x>z){alert(`${x} is greater than ${y} and ${z}`)}
+            else if(y>x && y>z){alert(`${y} is greater than ${x} and ${z}`)}
+            else{alert(`${z} is greater than ${x} and ${y}`)}
+        }
+        largest(a,b,c)
+    </script>
+</body>
+</html>
